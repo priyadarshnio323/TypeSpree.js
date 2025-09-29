@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TypeSpree-Typing Speed Test</title>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <p class="logo ">TypeSpree</p>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="techniques.html" class="nav-link">Techniques</a></li>
+                <li><a href="benefits.html" class="nav-link">Benefits</a></li>
+                <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="outer">
+        <div class="mainblock ">
+        <h1>Typing Challenge</h1>
+        <div class="timer ">
+            <div class="s "><span class="secs"><span id="time-value">60</span>s</span></div>
+            <div class="wds "><span class="words">0</span>
+                <span class="wpm">wpm</span></div>
+            <div class="chrs "><span class="chars">0</span>
+                <span class="cpm">cpm</span></div>
+            
+        </div>
+        <div class="testbox">
+        <input type="text" class="textbox">
+            <span class="paragraph">
+            
+                </span>
+            </div>
+        <div class="restart">
+            <button>reset</button>
+        </div>
+    </div>
+</div>
+<div id="resultModal" class="modal hidden">
+    <div class="modal-content">
+        <button class="close">X</button>
+        <span id="title">TypeSpree Results</span>
+        <span id="wordspm" class="points">WPM:</span>
+        <span id="charspm" class="points">CPM:</span>
+        <span  id="mistakesCount" class="points">Mistakes:
+            <span>0</span>
+        </span>
+        <span  id="accuracy" class="points">Accuracy:</span>
+        <span id="appreciation"></span>
+        <button id="cl">Try again!</button>
+    </div>
+</div>
+<script src="js files/paragraph.js"></script>
+<script src="js files/script.js"></script>
+</body>
+</html>
