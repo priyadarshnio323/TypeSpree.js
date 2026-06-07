@@ -388,5 +388,46 @@ h1 {
     cursor: pointer;
     transition: background 0.2s, transform 0.15s;
 }
+.modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+.modal-icon { font-size: 32px; }
+
+.result-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    margin: 8px 0;
+}
+.result-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.result-val {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    font-weight: 500;
+}
+.result-item:nth-child(1) .result-val { color: var(--accent); }
+.result-item:nth-child(2) .result-val { color: var(--teal); }
+.result-item:nth-child(3) .result-val { color: var(--wrong); }
+.result-item:nth-child(4) .result-val { color: var(--amber); }
+.result-key {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+}
 #cl:hover  { background: #6a5de0; transform: translateY(-1px); }
 #cl:active { transform: scale(0.97); }
